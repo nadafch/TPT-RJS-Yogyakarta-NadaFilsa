@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const filter = fetchData.filter((item) => item.height <= 170);
+    const filter = fetchData.filter((item) => item.height < 170);
     setFilterData(filter);
   }, [fetchData]);
 
